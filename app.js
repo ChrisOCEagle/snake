@@ -24,9 +24,9 @@ var canvas = document.getElementById("game"),
 // get the bottom edge of the canvas which is computed by canvasCoord.height minus canvasCoord.y
 // get the left edge of the canvas which is computed by canvasCoord.left minus canvasCoord.x
 var canvasX = Math.floor(canvasCoord.x - parseInt(bodyStyle.marginLeft)),
-    canvasY = Math.floor(canvasCoord.y - parseInt(bodyStyle.marginTop)),
-    topEdge = Math.floor(canvasCoord.top - parseInt(bodyStyle.marginTop) - canvasY),
-    bottomEdge = Math.floor(canvasCoord.bottom - parseInt(bodyStyle.marginTop) - canvasY),
+    canvasY = Math.floor(canvasCoord.y),
+    topEdge = Math.floor(canvasCoord.top - parseInt(bodyStyle.marginTop)),
+    bottomEdge = Math.floor(canvasCoord.bottom - parseInt(bodyStyle.marginTop)),
     rightEdge = Math.floor(canvasCoord.right - parseInt(bodyStyle.marginLeft) - canvasX),
     leftEdge = Math.floor(canvasCoord.left - parseInt(bodyStyle.marginLeft) - canvasX),
     canvasWidth = canvasCoord.width - canvasX,
@@ -41,7 +41,7 @@ var canvasX = Math.floor(canvasCoord.x - parseInt(bodyStyle.marginLeft)),
         x: canvasX,
         y: canvasY,
     };
-console.log(canvasDim);
+/* console.log(canvasDim); */
 
 document.onkeydown = function (event) {
     if (event.key === "ArrowUp") {
