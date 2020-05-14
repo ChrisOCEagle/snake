@@ -1,31 +1,11 @@
 * {
-	margin: 0;
-	padding: 0;
+	/*margin: 0;
+	padding: 0;*/
+	box-sizing: border-box;
 }
 
-body {
-	height: 500px;
+#gameCanvas {
 	width: 500px;
-	margin: 20px auto;
-}
-
-.container {
-	display: flex;
-	width: 80%;
-	height: 80%;
-	margin: 4% auto;
-}
-
-#game {
-	border: 10px solid #000;
-	position: relative;
-}
-
-#player {
-	position: absolute;
-	width: 2.5%;
-	height: 2.5%;
-	background: #000;
-	top: 50%;
-	left: 50%;
+	height: 500px;
+	border: 1px solid #000;
 }
